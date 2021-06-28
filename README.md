@@ -2,7 +2,7 @@
 
 What is it?
 
-It's a simple Aladdin SNES rom hacking tool that will edit the strings contained in the ROM binary
+It's a simple Aladdin SNES rom hacking tool that will edit the strings contained in the ROM binary<br/><br/>
 How to use it
 
 Here's a step by step

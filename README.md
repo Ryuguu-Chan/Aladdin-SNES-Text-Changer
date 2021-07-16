@@ -15,7 +15,7 @@ Here's a step by step
 
 The commands
 
-AB...YZ keys are for wel....Alphabet
+AB...YZ keys are for well....Alphabet
 
 01...89 keys (numpad or not) are for numbers
 

@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded"
         KeyDown="Window_KeyDown"
-        Title="Aladdin SNES Text Changer (made by Ogan Özkul aka Ryuguu - Chan)" Height="450" Width="800" Background="Black">
+        Title="Aladdin SNES Text Changer (made by Ogan Özkul aka Ryuguu - Chan)" Height="481" Width="782" Background="Black">
     <Window.Resources>
         <BitmapImage x:Key="coffee" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Users\Ryu\Documents\Projets C#\01 Aladdin SNES Text Changer\Aladdin SNES Text Changer\Resources\buymecoffee_logo.png"/>
         <BitmapImage x:Key="BuyMeCoffee" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Users\Ryu\Documents\Projets C#\01 Aladdin SNES Text Changer\Aladdin SNES Text Changer\Resources\buymecoffee_logo.png"/>
@@ -22,7 +22,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Rectangle Fill="Black" Stroke="White" Margin="118,141,113,38"/>
-        <TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" Text="Aladdin SNES Text Changer" Foreground="White" FontSize="30" Height="40" Margin="118,64,113,317"/>
+        <TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Text="Aladdin SNES Text Changer" Foreground="White" FontSize="30" Height="40" Margin="118,63,113,0"/>
         <Label Content="Select Text" HorizontalAlignment="Left" Margin="128,151,0,0" VerticalAlignment="Top" Foreground="White" Height="26" Width="66"/>
         <ComboBox x:Name="GameTextComnboBox" HorizontalAlignment="Left" KeyDown="GameTextComnboBox_KeyDown" SelectionChanged="GameTextComnboBox_SelectionChanged" Margin="199,151,0,0" VerticalAlignment="Top" Width="120" Height="22" Focusable="False" IsTextSearchEnabled="False"/>
         <Canvas x:Name="GameTextCanvas" Margin="128,182,123,48"/>

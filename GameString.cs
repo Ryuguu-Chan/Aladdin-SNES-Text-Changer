@@ -95,10 +95,10 @@ namespace Aladdin_SNES_Text_Changer
         };
 
         // some getter/setters
-        public string GetValue  { get { return Value;  } }
-        public int GetOffset    { get { return Offset; } }
-        public int GetLength    { get { return Length; } }
-        public string SetValue  { set { Value = value; } }
+        public string GetValue          { get { return Value;           } }
+        public int GetOffset            { get { return Offset;          } }
+        public int GetLength            { get { return Length;          } }
+        public string SetValue          { set { Value = value;          } }
 
         public void SetCharValue(int Index, char Lettre)
         {
@@ -120,8 +120,38 @@ namespace Aladdin_SNES_Text_Changer
 
             for (int i = Offset; i < (Offset + L); ++i) 
             {
-                try { Value += AladdinCharDataComputing[MainWindow.GameData[i]]; }
-                catch (Exception) { Value += "|"; }
+                if (i > Offset + L)
+                    continue;
+
+                try 
+                { 
+                    Value += AladdinCharDataComputing[MainWindow.GameData[i]];
+                }
+                catch (Exception) 
+                {
+                    if
+                    (
+                        MainWindow.GameData[i+0] == 0x00 &&
+                        MainWindow.GameData[i+1] == 0x88 &&
+                        MainWindow.GameData[i+2] == 0x05 &&
+                        MainWindow.GameData[i+3] == 0x20 ||
+
+                        MainWindow.GameData[i+0] == 0x00 &&
+                        MainWindow.GameData[i+1] == 0x08 &&
+                        MainWindow.GameData[i+2] == 0x06 &&
+                        MainWindow.GameData[i+3] == 0x20
+                    )
+                    {
+                        i += 3;
+
+                        // in order to differenciate the string separators
+                        Value += "_";
+                    }
+                    else
+                    {
+                        Value += "|";
+                    }
+                }
             }
         }
 

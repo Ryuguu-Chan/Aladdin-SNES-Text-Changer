@@ -35,7 +35,7 @@
             <Button Click="Button_Click_2">Donate</Button>
             <Button Click="Button_Click_3">About</Button>
         </ToolBar>
-        <Image Height="79" Margin="0,55,24,0" VerticalAlignment="Top" Cursor="Hand" MouseDown="Image_MouseDown_1" Source="{DynamicResource BuyMeCoffee}" HorizontalAlignment="Right" Width="79"/>
+        <Image Height="79" Margin="0,55,24,0" VerticalAlignment="Top" Cursor="Hand" MouseDown="Image_MouseDown_1" HorizontalAlignment="Right" Width="79" Source="Resources/buymecoffee_logo.png"/>
 
     </Grid>
 </Window>

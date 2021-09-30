@@ -15,7 +15,7 @@ Here's a step by step
 
 The commands
 
-AB...YZ keys are for wel....Alphabet
+AB...YZ keys are for well....Alphabet
 
 01...89 keys (numpad or not) are for numbers
 
@@ -24,6 +24,3 @@ But for symbols, you have to navigate through the internal symbol dictionary by 
 You can also use the SPACE bar for placing a blank space on the string
 
 The ENTER (RETURN) key doesn't work yet, so you have to go through all the line with the left/right arrow keys in order to go to the next line
-
-
-TODO: Adding the computation of some missing strings
